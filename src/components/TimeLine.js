@@ -50,12 +50,6 @@ class Timeline extends Component {
         const percentage = newTranslate / this.state.timeLineWidth * 100;
 
         this.props.methods.setProgress(this.props.states.duration * percentage / 100);
-
-        if (newTranslate < this.timeLineWidth) {
-            this.setState({
-                timeStampLine: newTranslate,
-            });
-        }
     }
 
     render() {
