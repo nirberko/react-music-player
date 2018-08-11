@@ -1,0 +1,31 @@
+.TimeLine {
+    $height: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(0px - #{$height});
+    &__progress {
+        width: 100%;
+        &__line {
+            background-color: rgba(29,29,29,.2);
+            width: 100%;
+            height: $height;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: .2s;
+            &:hover {
+                opacity: 1;
+            }
+            &__fill {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                background-color: #f1c40f;
+                opacity: 1;
+                width: 0;
+                height: $height;
+                transition: .2s;
+            }
+        }
+    }
+}

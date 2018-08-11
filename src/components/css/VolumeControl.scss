@@ -1,0 +1,22 @@
+.VolumeControl {
+    margin-right: 14px;
+    &__volume {
+        display: flex;
+        align-items: flex-end;
+        background-color: rgba(255,255,255,0.1);
+        width: 8px;
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-drag: none;
+        &__fill {
+            background-color: rgba(255,255,255,0.6);
+            opacity: 1;
+            width: 8px;
+            height: 100%;
+            transition: .2s;
+        }
+    }
+}

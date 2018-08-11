@@ -1,0 +1,88 @@
+@mixin triangle ($size, $color) {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: calc(#{$size} * 1.5 ) solid $color;
+    margin-left: 3px;
+}
+
+.Controls {
+    $color: #ffffff;
+    $hoverColor: #1d1d1d;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    &__playButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__play {
+            &:hover {
+                i {
+                    border-left-color: $hoverColor;
+                }
+            }
+            i {
+                @include triangle(10px, $color);
+            }
+        }
+        &__pause {
+            &:hover {
+                i {
+                    background-color: $hoverColor;
+                }
+            }
+            i {
+                display: block;
+                background-color: $color;
+                width: 5px;
+                height: 20px;
+                margin: 0 2px;
+            }
+        }
+        &__next {
+            width: 50px !important;
+            height: 50px !important;
+            &:hover {
+                i {
+                    border-left-color: $hoverColor;
+                }
+            }
+            i {
+                @include triangle(6px, $color);
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        &__back {
+            @extend .Controls__playButtons__next;
+            transform: rotate(180deg);
+        }
+        button {
+            border: 2px solid $color;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+            transition: .2s;
+            margin: 0 8px;
+            &:hover {
+                background-color: $color;
+                opacity: 1;
+            }
+            &:disabled {
+                opacity: 0.2;
+                pointer-events: none;
+            }
+        }
+    }
+}

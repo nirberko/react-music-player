@@ -1,0 +1,13 @@
+.MainPlayer {
+    position: relative;
+    background-color: #1d1d1d;
+    width: 100%;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.05);
+    color: #ffffff;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+    * {
+        box-sizing: border-box;
+    }
+}
