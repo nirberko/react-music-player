@@ -33,7 +33,6 @@ const HOCAudio = (Player) => {
 
         componentWillMount() {
             this.audioElement = document.createElement('audio');
-            this.audioElement.addEventListener('canplay', this.onCanPlay);
             this.audioElement.addEventListener('ended', this.onEnded);
             this.audioElement.addEventListener('play', this.onPlay);
             this.audioElement.addEventListener('pause', this.onPause);

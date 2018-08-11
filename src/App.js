@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import MainPlayer from './components/MainPlayer'
+import MainPlayer from './ReactMusicPlayer/MainPlayer'
 
 import HeyMercyMP3 from './res/Pierce_Murphy-Hey_Mercy.mp3'
 import HeyMercyPoster from './res/Pierce_Murphy-Hey_Mercy.jpg'
