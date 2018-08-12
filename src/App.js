@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-import MainPlayer from './ReactMusicPlayer/MainPlayer'
+import MainPlayer from './ReactMusicPlayer/MainPlayer';
 
-import HeyMercyMP3 from './res/Pierce_Murphy-Hey_Mercy.mp3'
-import HeyMercyPoster from './res/Pierce_Murphy-Hey_Mercy.jpg'
+import HeyMercyMP3 from './res/Pierce_Murphy-Hey_Mercy.mp3';
+import HeyMercyPoster from './res/Pierce_Murphy-Hey_Mercy.jpg';
 
-import RunningEiskrokodilMP3 from './res/Lobo_Loco-Running_Eiskrokodil.mp3'
-import RunningEiskrokodilPoster from './res/Lobo_Loco-Running_Eiskrokodil.jpg'
+import RunningEiskrokodilMP3 from './res/Lobo_Loco-Running_Eiskrokodil.mp3';
+import RunningEiskrokodilPoster from './res/Lobo_Loco-Running_Eiskrokodil.jpg';
 
 import './App.scss'
 
